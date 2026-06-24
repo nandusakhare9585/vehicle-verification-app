@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm audit *)",
+      "Bash(npm run *)",
+      "Bash(curl -s \"http://localhost:3000/api/vehicle/1HGCM82633A004352\")",
+      "Bash(node -e \"let s='';process.stdin.on\\('data',d=>s+=d\\).on\\('end',\\(\\)=>{const r=JSON.parse\\(s\\);console.log\\('VEHICLE:',r.specs.modelYear,r.specs.make,r.specs.model\\);console.log\\('Body:',r.specs.bodyClass,'| Engine:',r.specs.displacementL+'L','| Cyl:',r.specs.engineCylinders\\);console.log\\('HEALTH score/rating:',r.health.score,r.health.rating\\);console.log\\('Recalls:',r.recalls.length,'| Complaints:',r.complaints.length\\);console.log\\('Images:',r.images.length, r.images[0]||'\\(none\\)'\\);console.log\\('Ownership enabled:',r.ownership.status.enabled,'-',r.ownership.status.note\\);console.log\\('Odometer enabled:',r.odometer.status.enabled\\);console.log\\('Sample recall:',r.recalls[0]?r.recalls[0].component:'\\(none\\)'\\);}\\)\")"
+    ]
+  }
+}
